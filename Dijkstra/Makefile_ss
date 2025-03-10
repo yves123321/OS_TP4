@@ -1,0 +1,10 @@
+all:  dijkstra_large.ss dijkstra_small.ss
+
+dijkstra_large.ss: dijkstra_large.c Makefile
+	/usr/ensta/pack/simplescalar-3v0d/bin/sslittle-na-sstrix-gcc -static dijkstra_large.c -O3 -o dijkstra_large.ss
+
+dijkstra_small.ss: dijkstra_small.c Makefile
+	/usr/ensta/pack/simplescalar-3v0d/bin/sslittle-na-sstrix-gcc -static dijkstra_small.c -O3 -o dijkstra_small.ss
+
+clean:
+	rm -rf dijkstra_large.ss dijkstra_small.ss output*

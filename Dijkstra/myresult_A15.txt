@@ -1,0 +1,30 @@
+1kb:
+sim_IPC                      0.4684 # instructions per cycle
+sim_CPI                      2.1348 # cycles per instruction
+il1.miss_rate                0.0779 # miss rate (i.e., misses/ref)
+dl1.miss_rate                0.0787 # miss rate (i.e., misses/ref)
+
+2kb:
+sim_IPC                      0.4727 # instructions per cycle
+sim_CPI                      2.1156 # cycles per instruction
+il1.miss_rate                0.0760 # miss rate (i.e., misses/ref)
+dl1.miss_rate                0.0569 # miss rate (i.e., misses/ref)
+
+4kb:
+sim_IPC                      0.4864 # instructions per cycle
+sim_CPI                      2.0561 # cycles per instruction
+il1.miss_rate                0.0660 # miss rate (i.e., misses/ref)
+dl1.miss_rate                0.0556 # miss rate (i.e., misses/ref)
+
+8kb:
+sim_IPC                      0.5038 # instructions per cycle
+sim_CPI                      1.9851 # cycles per instruction
+il1.miss_rate                0.0438 # miss rate (i.e., misses/ref)
+dl1.miss_rate                0.0550 # miss rate (i.e., misses/ref)
+
+16kb:
+sim_IPC                      0.5153 # instructions per cycle
+sim_CPI                      1.9405 # cycles per instruction
+il1.miss_rate                0.0312 # miss rate (i.e., misses/ref)
+dl1.miss_rate                0.0535 # miss rate (i.e., misses/ref)
+

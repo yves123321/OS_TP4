@@ -1,0 +1,51 @@
+下面是我的运行结果，请你来用latex做个表格记录结果，要求每一列是Taille de cache 、IPC、CPI、il1 miss rate、dl1 miss rate，表格的表头是performance de Dijkstra：
+
+1kb:
+sim_IPC                      0.3237 # instructions per cycle 
+sim_CPI                      3.0891 # cycles per instruction
+il1.accesses                  11789 # total number of accesses
+il1.hits                      10268 # total number of hits
+il1.misses                     1521 # total number of misses
+dl1.accesses                   4969 # total number of accesses
+dl1.hits                       4346 # total number of hits
+dl1.misses                      623 # total number of misses
+
+2kb:
+sim_IPC                      0.3256 # instructions per cycle
+sim_CPI                      3.0711 # cycles per instruction
+il1.accesses                  11766 # total number of accesses
+il1.hits                      10274 # total number of hits
+il1.misses                     1492 # total number of misses
+dl1.accesses                   4969 # total number of accesses
+dl1.hits                       4401 # total number of hits
+dl1.misses                      568 # total number of misses
+
+4kb:
+sim_IPC                      0.3271 # instructions per cycle
+sim_CPI                      3.0569 # cycles per instruction
+il1.accesses                  11734 # total number of accesses
+il1.hits                      10264 # total number of hits
+il1.misses                     1470 # total number of misses
+dl1.accesses                   4969 # total number of accesses
+dl1.hits                       4481 # total number of hits
+dl1.misses                      488 # total number of misses
+
+8kb:
+sim_IPC                      0.3429 # instructions per cycle
+sim_CPI                      2.9165 # cycles per instruction
+il1.accesses                  11369 # total number of accesses
+il1.hits                      10294 # total number of hits
+il1.misses                     1075 # total number of misses
+dl1.accesses                   4969 # total number of accesses
+dl1.hits                       4483 # total number of hits
+dl1.misses                      486 # total number of misses
+
+16kb:
+sim_IPC                      0.3520 # instructions per cycle
+sim_CPI                      2.8406 # cycles per instruction
+il1.accesses                  11048 # total number of accesses
+il1.hits                      10321 # total number of hits
+il1.misses                      727 # total number of misses
+dl1.accesses                   4969 # total number of accesses
+dl1.hits                       4485 # total number of hits
+dl1.misses                      484 # total number of misses

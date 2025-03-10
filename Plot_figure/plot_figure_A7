@@ -1,0 +1,38 @@
+import matplotlib
+matplotlib.use('Agg')  # Utilisation du backend non interactif
+import matplotlib.pyplot as plt
+
+# Données
+cache_sizes = [1, 2, 4, 8, 16]  # Taille du cache en KB
+
+# Données pour Dijkstra
+ipc_dijkstra = [0.3237, 0.3256, 0.3271, 0.3429, 0.3520]
+cpi_dijkstra = [3.0891, 3.0711, 3.0569, 2.9165, 2.8406]
+il1_miss_dijkstra = [1521 / 11789 * 100, 1492 / 11766 * 100, 1470 / 11734 * 100, 1075 / 11369 * 100, 727 / 11048 * 100]
+dl1_miss_dijkstra = [623 / 4969 * 100, 568 / 4969 * 100, 488 / 4969 * 100, 486 / 4969 * 100, 484 / 4969 * 100]
+
+# Données pour Blowfish
+ipc_blowfish = [0.3315, 0.3326, 0.3332, 0.3337, 0.3353]
+cpi_blowfish = [3.0162, 3.0068, 3.0014, 2.9969, 2.9828]
+il1_miss_blowfish = [449 / 10595 * 100, 430 / 10581 * 100, 420 / 10568 * 100, 400 / 10555 * 100, 344 / 10521 * 100]
+dl1_miss_blowfish = [843 / 6563 * 100, 836 / 6563 * 100, 834 / 6563 * 100, 833 / 6563 * 100, 828 / 6563 * 100]
+
+# Fonction pour tracer et enregistrer les graphes
+def plot_and_save(y_dijkstra, y_blowfish, ylabel, title, filename):
+    plt.figure(figsize=(6, 4))
+    plt.plot(cache_sizes, y_dijkstra, marker='o', linestyle='-', color='r', label="Dijkstra")
+    plt.plot(cache_sizes, y_blowfish, marker='s', linestyle='-', color='b', label="Blowfish")
+    plt.xlabel("Taille du cache L1 (KB)")
+    plt.ylabel(ylabel)
+    plt.title(title)
+    plt.legend()
+    plt.savefig(filename)
+    plt.close()
+
+# Génération des graphiques
+plot_and_save(ipc_dijkstra, ipc_blowfish, "IPC", "IPC en fonction de la taille du cache L1", "ipc_vs_cache.png")
+plot_and_save(cpi_dijkstra, cpi_blowfish, "CPI", "CPI en fonction de la taille du cache L1", "cpi_vs_cache.png")
+plot_and_save(il1_miss_dijkstra, il1_miss_blowfish, "il1 miss rate (%)", "Taux de miss de il1 en fonction de la taille du cache L1", "il1_miss_vs_cache.png")
+plot_and_save(dl1_miss_dijkstra, dl1_miss_blowfish, "dl1 miss rate (%)", "Taux de miss de dl1 en fonction de la taille du cache L1", "dl1_miss_vs_cache.png")
+
+print("✅ Graphiques enregistrés : ipc_vs_cache.png, cpi_vs_cache.png, il1_miss_vs_cache.png, dl1_miss_vs_cache.png")

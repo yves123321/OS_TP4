@@ -1,0 +1,50 @@
+1kb:
+sim_IPC                      0.3315 # instructions per cycle
+sim_CPI                      3.0162 # cycles per instruction
+il1.accesses                  10595 # total number of accesses
+il1.hits                      10146 # total number of hits
+il1.misses                      449 # total number of misses
+dl1.accesses                   6563 # total number of accesses
+dl1.hits                       5720 # total number of hits
+dl1.misses                      843 # total number of misses
+
+2kb:
+sim_cycle                     30068 # total simulation time in cycles
+sim_IPC                      0.3326 # instructions per cycle
+sim_CPI                      3.0068 # cycles per instruction
+il1.accesses                  10581 # total number of accesses
+il1.hits                      10151 # total number of hits
+il1.misses                      430 # total number of misses
+dl1.accesses                   6563 # total number of accesses
+dl1.hits                       5727 # total number of hits
+dl1.misses                      836 # total number of misses
+
+4kb:
+sim_IPC                      0.3332 # instructions per cycle
+sim_CPI                      3.0014 # cycles per instruction
+il1.accesses                  10568 # total number of accesses
+il1.hits                      10148 # total number of hits
+il1.misses                      420 # total number of misses
+dl1.accesses                   6563 # total number of accesses
+dl1.hits                       5729 # total number of hits
+dl1.misses                      834 # total number of misses
+
+8kb:
+sim_IPC                      0.3337 # instructions per cycle
+sim_CPI                      2.9969 # cycles per instruction
+il1.accesses                  10555 # total number of accesses
+il1.hits                      10155 # total number of hits
+il1.misses                      400 # total number of misses
+dl1.accesses                   6563 # total number of accesses
+dl1.hits                       5730 # total number of hits
+dl1.misses                      833 # total number of misses
+
+16kb:
+sim_IPC                      0.3353 # instructions per cycle
+sim_CPI                      2.9828 # cycles per instruction
+il1.accesses                  10521 # total number of accesses
+il1.hits                      10177 # total number of hits
+il1.misses                      344 # total number of misses
+dl1.accesses                   6563 # total number of accesses
+dl1.hits                       5735 # total number of hits
+dl1.misses                      828 # total number of misses
